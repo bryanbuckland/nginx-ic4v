@@ -2,7 +2,7 @@
   "kind": "Template",
   "apiVersion": "v1",
   "metadata": {
-    "name": "nginx-ic4vample",
+    "name": "nginx-ic4v-sample",
     "annotations": {
       "openshift.io/display-name": "IBM Nginx HTTP server and a reverse proxy",
       "description": "An example Nginx HTTP server and a reverse proxy (nginx) application that serves static content. For more information about using this template, including OpenShift considerations, see https://github.com/bryanbuckland/nginx-ic4v/blob/master/README.md.",
@@ -15,8 +15,8 @@
     }
   },
   "message": "The following service(s) have been created in your project: ${NAME}.\n\nFor more information about using this template, including OpenShift considerations, see https://github.com/bryanbuckland/nginx-ic4v/blob/master/README.md.",
-  "labels": {
-    "template": "nginx-ic4vample"
+  labels": {
+    "template": "nginx-ic4v-sample"
   },
   "objects": [
     {
@@ -145,7 +145,7 @@
             "imageChangeParams": {
               "automatic": true,
               "containerNames": [
-                "nginx-ic4vample"
+                "nginx-ic4v-sample"
               ],
               "from": {
                 "kind": "ImageStreamTag",
@@ -171,7 +171,7 @@
           "spec": {
             "containers": [
               {
-                "name": "nginx-ic4vample",
+                "name": "nginx-ic4v-sample",
                 "image": " ",
                 "ports": [
                   {
@@ -219,7 +219,7 @@
       "displayName": "Name",
       "description": "The name assigned to all of the frontend objects defined in this template.",
       "required": true,
-      "value": "nginx-ic4vample"
+      "value": "nginx-ic4v-sample"
     },
     {
       "name": "NAMESPACE",
