@@ -4,7 +4,7 @@
   "metadata": {
     "name": "nginx-ic4vample",
     "annotations": {
-      "openshift.io/display-name": "Nginx HTTP server and a reverse proxy",
+      "openshift.io/display-name": "IBM Nginx HTTP server and a reverse proxy",
       "description": "An example Nginx HTTP server and a reverse proxy (nginx) application that serves static content. For more information about using this template, including OpenShift considerations, see https://github.com/bryanbuckland/nginx-ic4v/blob/master/README.md.",
       "tags": "quickstart,nginx",
       "iconClass": "icon-nginx",
